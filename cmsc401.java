@@ -1,14 +1,51 @@
 // PRAISY BIGUVU
 
 //Alchemy
+
+
+/*Problem Description:
+
+Mines of Oreland yield unlimited amounts of silver, but no gold. Unfortunately, rich noblemen 
+from the neighboring kingdom of Eldorado are only interested in buying gold.
+The resourceful merchants of Oreland want to hire alchemists to change the silver into gold. 
+However, the alchemists are highly specialized, somewhat limited skills: each alchemist only 
+knows how to transmute (convert) one, specific metal into one other metal. None of the
+alchemists knows how to directly transmute silver into gold. Thus, the process of changing silver 
+into gold will need to involve multiple steps, starting with silver, going through a sequence of 
+transmutations involving other intermediate metals, and finally arriving at gold.
+For each transmutation, alchemists charge a fee. The fee amount depends on the two metals 
+involved in the transmutation.
+
+Your task is to write a program to help the merchants devise a sequence of transmutations that 
+would change silver into gold with the smallest possible total fee paid to the alchemists.
+
+Details:
+Your program should read input from System.in:
+• in the first line of input: a number of transmutations alchemists know how to handle
+• for each transmutation the alchemists know: the metals it involves and its cost, as a 
+triple, each in a separate line of input: MetalX MetalY CostXY where:
+o MetalX is the atomic number of the input (substrate) metal
+o MetalY is the atomic number of the output (product) metal
+o CostXY is the fee alchemists charge for transmuting 1 pound of MetalX into 1 
+pound of MetalY
+
+Your task is to find the sequence of transmutations, starting with silver (Ag, atomic number 47) 
+and ending with gold (Au, atomic number 79), that has the smallest sum of fees for transmuting 
+1 pound of Ag into 1 pound of Au
+
+Your program should just return on System.out one number: the smallest possible sum of fees 
+(it should not return the actual sequence).
+There will always be at least one indirect, multi-step way to change silver into gold */
+
+
 /* 
+basic outline:
 
 Create IDs for each vertices
 Create a adjacency list for the graph path //representation of graph
 Dijkstra algorithm 
 
 */
-
 
 import java.util.*;
 
