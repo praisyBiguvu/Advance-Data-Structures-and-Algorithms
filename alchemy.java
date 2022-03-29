@@ -49,7 +49,7 @@ Dijkstra algorithm
 
 import java.util.*;
 
-public class cmsc401 {
+public class alchemy {
     private static final Scanner scanner = new Scanner(System.in);
 
     // Please use these methods to take inputs and write outputs.
